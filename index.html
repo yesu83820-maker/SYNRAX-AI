@@ -1,1 +1,68 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#05091b">
+<title>SYNRAX AI — Your Mind, Supercharged</title>
+<style>
+:root{--bg:#050817;--panel:#0a1024;--line:#1b2747;--cyan:#00d1ff;--blue:#246bff;--violet:#795bff;--pink:#a855f7;--text:#f6f8ff;--muted:#9ba8c9}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#111b53 0,transparent 38%),radial-gradient(ellipse at 5% 45%,#071c3b 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+button,input{font:inherit}button{cursor:pointer}.wrap{max-width:1180px;margin:auto;padding:22px}.top{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:10px 0 25px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:2px}.mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--cyan),#246bff 48%,var(--pink));display:grid;place-items:center;box-shadow:0 0 30px #145bff55}.mark svg{width:29px}.brand small{display:block;font-size:9px;letter-spacing:3px;color:var(--muted);font-weight:500;margin-top:3px}.topbtn,.ghost{background:#101831;border:1px solid #293657;color:#e8edff;padding:10px 15px;border-radius:12px}.hero{text-align:center;padding:50px 0 36px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid #263d70;border-radius:99px;color:#9cecff;background:#0b1834;font-size:12px}.dot{width:7px;height:7px;border-radius:50%;background:#00e6a8;box-shadow:0 0 12px #00e6a8}.hero h1{font-size:clamp(38px,7vw,72px);line-height:1.03;letter-spacing:-2.8px;margin:24px auto 16px;max-width:850px}.gradient{background:linear-gradient(100deg,#fff 8%,var(--cyan) 38%,#7c6bff 72%,#b56cff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);max-width:570px;margin:0 auto 25px;line-height:1.7}.search{display:flex;gap:10px;max-width:720px;margin:0 auto;background:#0a1022;border:1px solid #2a3960;padding:9px;border-radius:18px;box-shadow:0 15px 60px #0006}.search input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:white;padding:12px}.primary{border:0;border-radius:12px;color:#041022;font-weight:800;padding:13px 20px;background:linear-gradient(110deg,var(--cyan),#5b7cff 70%,#a855f7);box-shadow:0 6px 25px #246bff35}.quick{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-top:17px}.quick button{background:#0c1429;border:1px solid #202f52;color:#bdc9e8;border-radius:99px;padding:8px 12px;font-size:12px}.sectionhead{display:flex;align-items:end;justify-content:space-between;margin:40px 0 17px;gap:10px}.sectionhead h2{font-size:21px;margin:0}.sectionhead p{font-size:12px;color:var(--muted);margin:6px 0 0}.tools{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.card{border:1px solid var(--line);background:linear-gradient(145deg,#0d1630dd,#080d1d);padding:19px;border-radius:18px;min-height:150px;transition:.2s}.card:hover{transform:translateY(-3px);border-color:#4667b7}.icon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#10213f;color:var(--cyan);font-size:21px;margin-bottom:17px}.card:nth-child(2) .icon,.card:nth-child(6) .icon{color:#b58aff;background:#20153d}.card:nth-child(3) .icon{color:#ff9fdc;background:#301633}.card h3{font-size:15px;margin:0 0 7px}.card p{font-size:12px;line-height:1.5;color:var(--muted);margin:0}.answer{display:none;margin:22px auto 0;max-width:720px;text-align:left;padding:18px;border:1px solid #293e69;background:#0a142b;border-radius:16px;line-height:1.65;white-space:pre-wrap}.answer.show{display:block}.answer .label{font-size:11px;color:#80eaff;letter-spacing:1.5px;margin-bottom:8px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid #17213c;margin-top:48px;padding:22px 0;color:#7786aa;font-size:11px}.foot b{color:#a9b8dd;letter-spacing:2px}.notice{color:#7f91b9;font-size:11px;line-height:1.5;margin-top:14px;text-align:center}
+@media(max-width:760px){.wrap{padding:15px}.hero{padding:32px 0 22px}.hero h1{letter-spacing:-1.6px}.tools{grid-template-columns:repeat(2,minmax(0,1fr))}.card{padding:15px;min-height:145px}.topbtn{padding:9px 11px}.search{border-radius:15px}.search .primary{padding:11px 14px}}@media(max-width:390px){.tools{grid-template-columns:1fr}.hero h1{font-size:38px}.brand{letter-spacing:1px}}
+</style>
+</head>
+<body><div class="wrap">
+<header class="top">
+  <div class="brand"><div class="mark" aria-label="SYNRAX logo"><svg viewBox="0 0 40 40" fill="none"><path d="M31 5 13 14c-6 3-6 9 0 12l14 7-12 2 13-7c6-3 6-9 0-12L14 9 31 5Z" fill="white" opacity=".95"/><path d="M31 5 13 14c-6 3-6 9 0 12l14 7-12 2 13-7c6-3 6-9 0-12L14 9 31 5Z" fill="url(#g)"/><defs><linearGradient id="g" x1="8" y1="6" x2="31" y2="34"><stop stop-color="#00D1FF"/><stop offset=".55" stop-color="#315BFF"/><stop offset="1" stop-color="#A855F7"/></linearGradient></defs></svg></div><div>SYNRAX AI<small>YOUR MIND · SUPERCHARGED</small></div></div>
+  <button class="topbtn" id="voiceBtn" type="button">🎙 Voice</button>
+</header>
+<main>
+<section class="hero">
+ <div class="eyebrow"><span class="dot"></span> YOUR PERSONAL AI WORKSPACE</div>
+ <h1>Ideas into reality.<br><span class="gradient">Powered by intelligence.</span></h1>
+ <p>Meet your AI companion for thinking, creating, learning, and getting more done. One workspace. Infinite possibilities.</p>
+ <form class="search" id="askForm"><input id="prompt" aria-label="Ask SYNRAX AI" placeholder="Ask SYNRAX anything…" autocomplete="off"><button class="primary" type="submit">Ask AI ↗</button></form>
+ <div class="quick"><button type="button" data-prompt="Give me 5 futuristic app ideas">✦ Brainstorm ideas</button><button type="button" data-prompt="Create a beginner study plan for this week">▤ Make a study plan</button><button type="button" data-prompt="Write a simple landing page introduction for my project">⌘ Write something</button></div>
+ <div class="answer" id="answer" aria-live="polite"><div class="label">SYNRAX AI · DEMO MODE</div><div id="answerText"></div></div>
+ <div class="notice">This starter website includes an interactive demo. Live AI answers require connecting a secure AI API.</div>
+</section>
+<section>
+ <div class="sectionhead"><div><h2>Explore your AI tools</h2><p>Everything you need to turn your next idea into something real.</p></div><span class="gradient" style="font-size:12px;font-weight:700">SYNRAX SUITE</span></div>
+ <div class="tools">
+  <button class="card" data-tool="Chat"><div class="icon">☏</div><h3>AI Chat</h3><p>Ask questions, explore ideas, and get helpful answers.</p></button>
+  <button class="card" data-tool="Create"><div class="icon">✧</div><h3>Creative Studio</h3><p>Develop concepts, prompts, stories, and content.</p></button>
+  <button class="card" data-tool="Image"><div class="icon">▧</div><h3>AI Image</h3><p>Prepare image ideas and prompts for visual creation.</p></button>
+  <button class="card" data-tool="Code"><div class="icon">⌘</div><h3>Coding Assistant</h3><p>Plan, understand, and build websites and apps.</p></button>
+  <button class="card" data-tool="Learn"><div class="icon">♧</div><h3>Learn</h3><p>Understand topics with simple explanations and study plans.</p></button>
+  <button class="card" data-tool="Voice"><div class="icon">♫</div><h3>Voice Assistant</h3><p>Use your device's speech recognition when available.</p></button>
+  <button class="card" data-tool="Write"><div class="icon">✎</div><h3>Writing Studio</h3><p>Draft messages, captions, plans, and polished text.</p></button>
+  <button class="card" data-tool="Work"><div class="icon">ϟ</div><h3>Productivity</h3><p>Break big goals into clear, manageable next steps.</p></button>
+ </div>
+</section>
+</main>
+<footer class="foot"><div><b>SYNRAX AI</b><br><span>Your mind · Supercharged</span></div><div>Built for ideas that go beyond.</div><div>© 2026 SYNRAX AI</div></footer>
+</div>
+<script>
+const input=document.getElementById('prompt'), box=document.getElementById('answer'), out=document.getElementById('answerText');
+function respond(text,tool='AI Chat'){
+ const t=(text||tool||'').trim(); let reply='';
+ if(!t){reply='Type a question above to get started.'}
+ else if(/image|picture|logo|draw/i.test(t)){reply='Creative brief: '+t+'\\n\\nSuggested style: premium futuristic, deep navy background, electric cyan and violet gradients, clean composition, crisp details.\\n\\nThis demo prepares ideas only. Connect an image-generation API to create images.'}
+ else if(/code|website|app|html|build/i.test(t)){reply='Let’s build it step by step.\\n1. Describe the main purpose.\\n2. Create a responsive interface.\\n3. Add the required functionality.\\n4. Test on mobile and tablet.\\n\\nThis demo does not generate or run production code yet. A secure AI API can be connected for live coding help.'}
+ else if(/study|learn|plan/i.test(t)){reply='A simple starting plan:\\n• Choose one clear goal.\\n• Split it into 20–30 minute sessions.\\n• Practise what you learn.\\n• Review progress at the end of the day.\\n\\nTell me the subject and your available time to tailor this plan.'}
+ else if(/idea|brainstorm/i.test(t)){reply='Here are three directions to explore:\\n1. A personal AI that organises daily goals.\\n2. A creative studio for text, images, and concepts.\\n3. A learning companion that explains topics in your preferred language.\\n\\nPick one and we can turn it into a detailed plan.'}
+ else {reply='Thanks for asking: “'+t+'”\\n\\nSYNRAX AI demo is ready for your idea. To provide real, dynamic AI answers, the site needs a securely connected AI API and backend. Never put private API keys directly in this HTML file.'}
+ out.textContent=reply;box.classList.add('show');box.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+document.getElementById('askForm').addEventListener('submit',e=>{e.preventDefault();respond(input.value);});
+document.querySelectorAll('[data-prompt]').forEach(b=>b.addEventListener('click',()=>{input.value=b.dataset.prompt;respond(input.value)}));
+document.querySelectorAll('[data-tool]').forEach(b=>b.addEventListener('click',()=>{const tool=b.dataset.tool; if(tool==='Voice'){startVoice();return;}input.value=tool;respond(tool,tool);}));
+function startVoice(){
+ const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+ if(!SR){respond('Voice input is not supported in this browser. Try Chrome and allow microphone access.');return;}
+ const rec=new SR();rec.lang='en-IN';rec.onresult=e=>{input.value=e.results[0][0].transcript;respond(input.value)};rec.onerror=()=>respond('Voice input could not start. Check browser microphone permission and try again.');rec.start();
+}
+document.getElementById('voiceBtn').addEventListener('click',startVoice);
+</script>
+</body></html>
